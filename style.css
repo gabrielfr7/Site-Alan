@@ -1,0 +1,181 @@
+/* --------- GERAL --------- */
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+  height: 100%;
+  position: relative;
+}
+
+/* ---------= CABEÇALHO --------- */
+header {
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+h2 {
+  text-align: center;
+  color: #b30000;
+}
+main {
+  margin-top: 20px; /* só para separar do header */
+}
+
+/* --------- MENU DE NAVEGAÇÃO --------- */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 6px;
+  font-weight: bold;
+}
+
+/* --------- SEÇÕES COM IMAGEM --------- */
+.apresentacao {
+  width: 80%;
+  margin: 30px auto;
+  overflow: auto; /* isssso contém o float da imagem */
+}
+
+.apresentacao img {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #b30000;
+}
+
+.apresentacao .texto {
+  margin-left: 220px; /* largura da imagem + margin */
+  text-align: center; /* centraliza o conteúdo dentro da div */
+}
+
+/* --------- SEÇÕES SEM IMAGEM --------- */
+.apresentacao.somente-texto {
+  text-align: center; /* centraliza todo o conteúdo */
+  margin: 30px auto;
+}
+
+/* remove a margem esquerda do texto quando a seção é "somente-texto" */
+.apresentacao.somente-texto .texto {
+  margin-left: 0;
+}
+
+/* --------- TABELAS --------- */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+/* AJUSTE: Juntei as regras do 'th' e 'td' que eram idênticas */
+th {
+  border: 1px solid #b30000;
+  padding: 10px;
+  text-align: center;
+}
+td { 
+  border: 1px solid #b30000;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #b30000;
+  color: white;
+}
+
+/* --------- LISTAS --------- */
+ul {
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+ol {
+  width: 80%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+/* --------- FORMULÁRIO --------- */
+.contato form {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #b30000;
+}
+
+.contato input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #b30000;
+}
+
+.contato select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #b30000;
+}
+
+.contato textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #b30000;
+}
+
+.contato input[type="submit"] {
+  background-color: #b30000;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+/*--------- BOTÃO --------- */
+.button {
+  background-color: #b30000;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+}
+
+/* --------- RODAPÉ --------- */
+footer {
+  background-color: #b30000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+NOTA SOBRE O CÓDIGO:
+Este código foi revisado com a ajuda de uma IA (Gemini).
+A IA auxiliou a corrigir problemas de layout relacionados ao 'float' e também ajudou 
+a entender e utilizar propriedades de atalho (shorthand) do CSS,
+como "border: 2px solid #b30000" e "margin: 5px 0 15px".
+*/
